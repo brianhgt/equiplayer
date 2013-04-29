@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Equiplayer</title>
+		<meta charset="utf-8">
+		<meta name="viewport"
+        content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<style>
+			body {
+				background-color: #000000;
+				margin: 0px;
+				overflow: hidden;
+			}
+
+			#info {
+				position: absolute;
+				top: 0px; width: 100%;
+				color: #ffffff;
+				padding: 5px;
+				font-family:Monospace;
+				font-size:13px;
+				font-weight: bold;
+				text-align:center;
+			}
+         
+         #menu {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+         }
+         button {
+            color: rgba(0,0,0,1);
+/*             background: transparent; */
+            background-color: rgba(255,255,255,0.3);
+            border: 0px;
+            padding: 5px 10px;
+            cursor: pointer;
+         }
+         button:hover {
+            background-color: rgba(0,255,255,0.5);
+         }
+         button:active {
+            color: #000000;
+            background-color: rgba(0,255,255,1);
+         }
+			a {
+				color: #ffffff;
+			}
+		</style>
+	</head>
+	<body>
+
+   <div id="menu"></div>
+	<script src="lib/three.min.js"></script>
+   
+   <video id="video" style="display:none">
+      <source src="textures/park_fountain_01.ogg" type='video/ogg; codecs="theora, vorbis"'></source>
+   </video>
+   
+   <script src="player_equi.js"></script>
+	</body>
+</html>
